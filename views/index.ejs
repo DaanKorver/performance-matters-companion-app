@@ -65,7 +65,15 @@
         <% data[1].data.forEach(tip=>{ %>
           <article>
 
-            <img src="assets/images/instructions/instruction1.jpg" alt="Foto van aftekenlijst en laptop" />
+            <picture>
+              <source srcset="assets/images/instructions/instruction<%= Math.floor(Math.random() * 4) + 1 %>.avif"
+                type="image/avif">
+              <source srcset="assets/images/instructions/instruction<%= Math.floor(Math.random() * 4)  + 1 %>.webp"
+                type="image/webp">
+              <img loading="lazy" width="300" height="200"
+                src="assets/images/instructions/instruction<%= Math.floor(Math.random() * 4)  + 1 %>.jpg"
+                alt="Foto van aftekenlijst en laptop" />
+            </picture>
 
             <div class="instruction-content">
               <h4>
@@ -76,7 +84,7 @@
                 <%= tip.body.substring(0,150) %>...
               </p>
 
-              <a href="detail.html?id=<%= tip.tip_id %>">Meer lezen</a>
+              <a href="detail?id=<%= tip.tip_id %>">Meer lezen</a>
             </div>
           </article>
           <% }) %>
@@ -122,4 +130,5 @@
 
     </p>
   </div>
+  <script src="scripts/main.js" type="module"></script>
   <%- include('partials/footer.ejs') %>

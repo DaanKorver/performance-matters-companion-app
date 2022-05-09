@@ -5,16 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "minify": "node minify.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.7",
     "compression": "^1.7.4",
+    "cssnano": "^5.1.7",
     "ejs": "^3.1.7",
     "express": "^4.18.1",
     "node-fetch": "^3.2.4",
+    "postcss": "^8.4.13",
+    "uglify-js": "^3.15.4"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.16"
   }
 }

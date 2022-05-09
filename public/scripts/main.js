@@ -4,8 +4,8 @@ import {
 	stopDragging,
 	dragHandler,
 	instructionSlider,
-} from './modules/drag.js'
-import { mobileMenu } from './modules/navigation.js'
+} from './modules/drag.min.js'
+import { mobileMenu } from './modules/navigation.min.js'
 
 // 🍉 Variables
 const hamburger = document.querySelector('.hamburger')
@@ -41,4 +41,8 @@ for (let i = 0; i < tabItems.length; i++) {
 		}
 		currentTab.classList.add('active')
 	})
+}
+
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('/scripts/sw.js')
 }
