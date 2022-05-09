@@ -1,0 +1,125 @@
+<%- include('partials/header.ejs') %>
+  <main>
+
+    <!-- Banner Section -->
+    <section class="banner">
+      <article class="banner-inner">
+
+        <!-- Banner titles -->
+        <h1>Het nieuwe MijnHVA</h1>
+        <h2>Een totaal nieuwe online ervaring</h2>
+
+        <!-- Banner buttons -->
+        <div class="banner-btns">
+          <a href="#">Aanmelden</a>
+          <a href="#information">Lees meer</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Information tabs -->
+    <section id="information" class="information-tabs">
+
+      <!-- Information tabs items -->
+      <ul class="tabs">
+        <% data[0].data.forEach((tab, index)=>{ %>
+          <li class="<%= index === 0 ? 'active' : '' %>">
+            <h3>
+              <%= tab.title %>
+            </h3>
+          </li>
+          <% }) %>
+      </ul>
+
+      <!-- Information tabs content -->
+      <div class="tab-content">
+        <% data[0].data.forEach((item, index)=>{ %>
+          <article class="tab-panel <%= index === 0 ? 'active' : '' %>">
+            <h3>
+              <%=item.title %>
+            </h3>
+            <span class="seperator"></span>
+            <p>
+              <%= item.body %>
+            </p>
+          </article>
+          <% }) %>
+            <video src="assets/images/MijnHvA-demo.mp4" controls></video>
+      </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section id="instructions" class="instructions">
+
+      <!-- Instructions Title -->
+      <h3>Praktische Tips</h3>
+
+      <!-- Seperator line -->
+      <span class="seperator"></span>
+
+      <!-- Seperator line -->
+      <span class="seperator"></span>
+
+      <!-- Instructions -->
+      <div class="instructions-slider">
+        <% data[1].data.forEach(tip=>{ %>
+          <article>
+
+            <img src="assets/images/instructions/instruction1.jpg" alt="Foto van aftekenlijst en laptop" />
+
+            <div class="instruction-content">
+              <h4>
+                <%= tip.title %>
+              </h4>
+              <hr />
+              <p>
+                <%= tip.body.substring(0,150) %>...
+              </p>
+
+              <a href="detail.html?id=<%= tip.tip_id %>">Meer lezen</a>
+            </div>
+          </article>
+          <% }) %>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <article>
+        <h3>Veelgestelde vragen</h3>
+        <span class="seperator"></span>
+        <section class="faq-section">
+          <% data[2].forEach(cat=>{ %>
+            <div class="faq-questions">
+              <h3>
+                <%= cat[1][0].title %>
+              </h3>
+              <hr>
+              <% cat[1].forEach(question=>{ %>
+                <details>
+                  <summary class="faq-question">
+                    <%= question.question %>
+                      <figure class="summary-chevron">
+                        <img src="../assets/images/chevron-right.svg" alt="Dropdown Arrow"></img>
+                      </figure>
+                  </summary>
+                  <p>
+                    <%= question.answer %>
+                  </p>
+                </details>
+                <% }) %>
+            </div>
+            <% }) %>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <div class="error">
+    <h2>Er is iets fout gegaan...</h2>
+    <p>Sorry. Wij hebben wat technische problemen (zoals je kunt zien)
+      probeer de pagina te te verversen (soms helpt dat 😜 )
+
+    </p>
+  </div>
+  <%- include('partials/footer.ejs') %>
