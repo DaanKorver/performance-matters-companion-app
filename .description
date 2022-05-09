@@ -1,0 +1,20 @@
+---
+title: "Companion App"                 
+client: "MijnHvA Student"          
+description: "Verbeter de performance van de companion app"    
+semester: 2                       
+sprint: 10                       
+support-level: 5                 
+behavior-criteria:                  
+  collaboration: 5                
+  learning-capacity: 2            
+  problem-solving: 2              
+  act-methodically: 2             
+  communicating: 4                
+collaborators: 1                  
+tags:                               
+  - huisstijl                                        
+  - html
+  - css
+burn-points: 10  
+---
