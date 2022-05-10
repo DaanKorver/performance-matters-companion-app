@@ -1,6 +1,6 @@
 # 🏫 MijnHva companion app
 
-![image](https://user-images.githubusercontent.com/30351629/167588061-f357df9b-2cda-44a7-a178-42d87689a471.png)
+![image](https://user-images.githubusercontent.com/30351629/167705165-35bcde90-9c22-4361-979e-1b7a195df495.png)
 
 ## 📚 Inhoudsopgave  
 
