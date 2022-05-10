@@ -8,4 +8,3 @@ self.addEventListener('install', e => {
 		return cache.addAll(cacheFiles).then(() => self.skipWaiting())
 	})
 })
-//Hello
