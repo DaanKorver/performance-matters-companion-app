@@ -619,3 +619,23 @@ footer a {
 .tip-container > article p {
   margin-bottom: 1em;
 }
+
+/*--------------------------------------------------------------
+# Offline Page
+--------------------------------------------------------------*/
+.offline {
+  height: calc(100vh - 55px);
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1em;
+  text-align: center1;
+}
+
+.offline h2 {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: clamp(3.5rem, 8vw, 5rem);
+}

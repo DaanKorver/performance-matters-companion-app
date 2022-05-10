@@ -44,5 +44,8 @@ for (let i = 0; i < tabItems.length; i++) {
 }
 
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/scripts/sw.js')
+	navigator.serviceWorker
+		.register('/sw.js')
+		.then(reg => console.log('Service worker registered', reg))
+		.catch(err => console.error('Service worker NOT registered', err))
 }

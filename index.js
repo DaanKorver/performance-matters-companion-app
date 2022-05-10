@@ -28,6 +28,10 @@ app.get('/detail', (req, res) => {
 	})
 })
 
+app.get('/offline', (req, res) => {
+	res.render('offline')
+})
+
 app.listen(PORT, () => {
 	console.log(`Listening on http://localhost:${PORT}`)
 })
