@@ -12,8 +12,11 @@ app.set('views', 'views')
 
 app.get('/', (req, res) => {
 	Promise.all([getPage('over'), getTip(), getFaq()]).then(data => {
+		const [tabs, tips, faq] = data
 		res.render('index', {
-			data,
+			tabs,
+			tips,
+			faq,
 		})
 	})
 })

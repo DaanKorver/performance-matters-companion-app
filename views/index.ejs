@@ -22,7 +22,7 @@
 
       <!-- Information tabs items -->
       <ul class="tabs">
-        <% data[0].data.forEach((tab, index)=>{ %>
+        <% tabs.data.forEach((tab, index)=>{ %>
           <li class="<%= index === 0 ? 'active' : '' %>">
             <h3>
               <%= tab.title %>
@@ -33,7 +33,7 @@
 
       <!-- Information tabs content -->
       <div class="tab-content">
-        <% data[0].data.forEach((item, index)=>{ %>
+        <% tabs.data.forEach((item, index)=>{ %>
           <article class="tab-panel <%= index === 0 ? 'active' : '' %>">
             <h3>
               <%=item.title %>
@@ -62,7 +62,7 @@
 
       <!-- Instructions -->
       <div class="instructions-slider">
-        <% data[1].data.forEach(tip=>{ %>
+        <% tips.data.forEach(tip=>{ %>
           <article>
 
             <picture>
@@ -97,7 +97,7 @@
         <h3>Veelgestelde vragen</h3>
         <span class="seperator"></span>
         <section class="faq-section">
-          <% data[2].forEach(cat=>{ %>
+          <% faq.forEach(cat=>{ %>
             <div class="faq-questions">
               <h3>
                 <%= cat[1][0].title %>
