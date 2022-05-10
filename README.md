@@ -1,10 +1,8 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# 🏫 MijnHva companion app
 
-# Titel
+![image](https://user-images.githubusercontent.com/30351629/167588061-f357df9b-2cda-44a7-a178-42d87689a471.png)
 
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
-
-## Inhoudsopgave
+## 📚 Inhoudsopgave  
 
 - [Beschrijving](#beschrijving)
 - [Kenmerken](#kenmerken)
@@ -13,23 +11,44 @@
 - [Bronnen](#bronnen)
 - [Licentie](#licentie)
 
-## Beschrijving
+## ⚙ Beschrijving  
 
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Tijdens deze opdracht heb ik gewerkt aan zowel de frontend en serverside performance. De MijnHVA site is nu Server Side Rendered en heeft offline support doormiddel van de Service Worker.
 
-## Kenmerken
+## 🧶 Kenmerken  
+* 📄 HTML
+* 📄 CSS
+* 🚀 JavaScript
+* ☁️ Rest API
+* 🧑‍💻 NodeJS
+* 🚂 Express
+* 🍰 EJS
+* 🌍 PWA
+* ⭐ PostCSS
 
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+## ⚡ Installatie & Gebruik  
+```
+# Cloning the repository
+git clone https://github.com/JustinLung/performance-matters-companion-app.git
 
-## Installatie
+# Moving to the folder
+cd performance-matters-companion-app
 
-## Gebruik
+# Install NPM packages
+npm install
 
-## Bronnen
+# Run local server
+npm run start
+```
 
-## Licentie
+## Bronnen  
+- [👫 Team 1: MijnHvA Project](https://github.com/boudewijnbout/mijnhvastudent-companion-startpage-autonomous)
+- [👬 Team 2: MijnHvA Project](https://github.com/DaanKorver/keep-users-in-control-mijnhvastudent-companion)
+- [🎨 Styleguide](https://www.figma.com/file/xKeoqRHU91N7f1n43TCtV5/MijnHvA_design_Course_FrontEndDD?node-id=0%3A1)
+- [📚 MijnHvA REST API](https://github.com/fdnd-apis/mijnhva)
+- [🥞 Front-End Performance Checklist](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/)
+
+## Licentie  
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
