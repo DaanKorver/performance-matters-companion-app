@@ -27,7 +27,7 @@ const STATIC_ASSETS = [
 	'/assets/images/wave.png',
 	'/assets/images/chevron-down.png',
 	'/assets/images/chevron-right.svg',
-	'/assets/video/MijnHvA-demo.mp4',
+	'/assets/video/MijnHvA-demo.m4v',
 	'/assets/images/message.svg',
 	'/assets/images/storing.svg',
 	'/offline',
